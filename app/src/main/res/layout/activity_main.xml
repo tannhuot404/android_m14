@@ -12,9 +12,9 @@
         android:id="@+id/tvHello"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_android"
         android:textSize="20sp"
         android:textStyle="bold|italic"
+        tools:text="PlaceHolder"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,12 +46,15 @@
         >
 
         <Button
+            android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn1"
+            android:enabled="false"
             />
 
         <Button
+            android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn2"
@@ -61,6 +64,7 @@
             />
 
         <Button
+            android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn3"
