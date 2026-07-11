@@ -1,5 +1,6 @@
 package com.example.demo_m14.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btn2 = findViewById(R.id.btn2);
         Button btn3 = findViewById(R.id.btn3);
         ImageButton imgButton = findViewById(R.id.img_btn);
+        Button btnGoToLogin = findViewById(R.id.btnGoToLogin);
 
         /*
         // Anoynimous Inner Class
@@ -82,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
         imgButton.setOnClickListener(this);
+        btnGoToLogin.setOnClickListener(this);
     }
 
     @Override
@@ -99,6 +102,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if (v.getId() == R.id.img_btn) {
 
+        } else if (v.getId() == R.id.btnGoToLogin) {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            intent.putExtra("username", "username@email.com");
+            startActivity(intent);
         }
     }
 }
