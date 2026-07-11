@@ -59,7 +59,7 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.PlanetView
         public  void setData(PlanetModel item) {
             imgView.setImageResource(item.getImg());
             tvName.setText(item.getName());
-            tvTotalMoon.setText(item.getTotalMoon());
+            tvTotalMoon.setText(item.getTotalMoon() + (item.getTotalMoon() > 1 ? " Moons":" Moon"));
         }
     }
 }

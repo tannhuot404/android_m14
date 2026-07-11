@@ -43,7 +43,7 @@ public class PlanetActivity extends AppCompatActivity {
     private void setupData() {
         data = new ArrayList<>();
 
-        PlanetModel PlanetModel3 = new PlanetModel("Earth",1,R.drawable.earth);
+        PlanetModel PlanetModel3 = new PlanetModel("Earth",1, R.drawable.earth);
         PlanetModel PlanetModel1 = new PlanetModel("Mercury",0,R.drawable.mercury);
         PlanetModel PlanetModel2 = new PlanetModel("Venus", 0, R.drawable.venus);
 
